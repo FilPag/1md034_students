@@ -57,20 +57,28 @@
           <h3>Delivery information:</h3>
           <form>
             <p>
-              <label for="firstname"></label>Full name<br>
+              <label for="firstname"></label>Full name<br/>
               <input type="text" id="firstname" name="fn" required="required" placeholder="First- and Last name name"/>
             </p>
             <p>
-              <label for="mail"></label>E-mail<br>
+              <label for="mail"></label>E-mail<br/>
               <input type="text" id="mail" name="mail" required="required" placeholder="E-mail address"/>
             </p>
             <p>
-              <label for="street"></label>Street<br>
+              <label for="street"></label>Street<br/>
               <input type="text" id="street" name="street" required="required" placeholder="Street name"/>
             </p>
             <p>
-              <label for="num"></label>House<br>
+              <label for="num"></label>House<br/>
               <input type="text" id="num" name="num" required="required" placeholder="House number"/>
+            </p>
+            <p>
+              <label for="payment"></label>Payment method<br/>
+              <select id="payment" name = "pay">
+                <option selected="selected">Credit card</option>
+                <option>Paypal</option>
+                <option>Cash</option>
+              </select>
             </p>
           </form>
 
