@@ -3,11 +3,17 @@
 body{
   font-family: "Signika", sans-serif;
   font-size: 1.2em;
+  margin: 0 auto;
 }
 
 button:hover{
   background-color: gray;
   cursor: pointer;
+}
+
+table{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .burgimg{
