@@ -7,8 +7,18 @@ body{
 
 .burgimg{
   width: 32vw;
+  height: 40vh;
 }
 
 .allergy{
   font-weight: bold;
+}
+
+#burgers{
+  background-color: black;
+  color: white;
+}
+
+#customerinfo{
+
 }
