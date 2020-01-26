@@ -5,6 +5,11 @@ body{
   font-size: 1.2em;
 }
 
+button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
 .burgimg{
   width: 32vw;
   height: 40vh;
@@ -14,7 +19,7 @@ body{
   font-weight: bold;
 }
 
-#burgers{
+#burgers table{
   background-color: black;
   color: white;
 }
