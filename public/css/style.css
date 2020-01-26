@@ -2,4 +2,9 @@
 
 body{
   font-family: "Signika", sans-serif;
+  font-size: 1.2em;
+}
+
+.burgimg{
+  width: 32vw;
 }
