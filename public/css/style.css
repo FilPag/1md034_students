@@ -30,6 +30,16 @@ table{
   font-weight: bold;
 }
 
+#header{
+  margin: 5px;
+  padding: 5px;
+}
+
+#headerimg{
+  width: 100%;
+  opacity: .7;
+}
+
 #burgers{
   margin: 5px;
   padding: 5px;
