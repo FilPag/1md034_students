@@ -14,91 +14,83 @@
     <section id="burgers">
       <h2>Select a Burger</h2>
       <p>In this section you select a burger</p>
-      <table>
-        <tbody>
-          <tr>
-            <td><h3>The Cheeseburger</h3></td>
-            <td><h3>The Open Cheeseburger - Sans cheese</h3></td>
-            <td><h3>The Upside Down Cheeseburger</h3></td>
-          </tr>
-          <tr>
-            <td><img class="burgimg" src ="img/cheeseburger.png"></td>
-            <td><img class="burgimg" src ="img/openBurg.jpg"></td>
-            <td><img class="burgimg" src ="img/upsideDown.jpg"></td>
-          </tr>
-          <tr>
-            <td>
-              <ul>
-                <li>AAA quality meat from china</li>
-                <li>Covered in our best cheese <span class="allergy">(contains lactose)</span></li>
-                <li>Our own freshly baked homemade bread <span class="allergy">(contains gluten)</span></li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Revolutionary "stay open" technology for your eating pleasure</li>
-                <li>Cheeseless - Who even needs cheese?</li>
-                <li>Gluten free bread</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>This mysterious burger stays upside down no matter what</li>
-                <li>Highest quality upside-down cheese <span class="allergy">(contains lactose)</span></li>
-                <li>Void engineered vegan bread</li>
-                <li>Completely vegan burger</li>
-              </ul>
-            </td>
-          </tr>
-          <tbody>
-          </table>
-        </section>
-        <section id="customerinfo">
+      <div class="wrapper">
+        <div class="row1 col1"><h3>The Cheeseburger</h3></div>
+        <div class="row1 col2"><h3>The Open Cheeseburger - Sans cheese</h3></div>
+        <div class="row1 col3"><h3>The Upside Down Cheeseburger</h3></div>
+        <div class="row2 col1"><img class="burgimg" src ="img/cheeseburger.png"></div>
+        <div class="row2 col2"><img class="burgimg" src ="img/openBurg.jpg"></div>
+        <div class="row2 col3"><img class="burgimg" src ="img/upsideDown.jpg"></div>
+        <div class="row3 col1">
+          <ul>
+            <li>AAA quality meat from china</li>
+            <li>Covered in our best cheese <span class="allergy">(contains lactose)</span></li>
+            <li>Our own freshly baked homemade bread <span class="allergy">(contains gluten)</span></li>
+          </ul>
+        </div>
+        <div class="row3 col2">
+          <ul>
+            <li>Revolutionary "stay open" technology for your eating pleasure</li>
+            <li>Cheeseless - Who even needs cheese?</li>
+            <li>Gluten free bread</li>
+          </ul>
+        </div>
+        <div class="row3 col3">
+          <ul>
+            <li>This mysterious burger stays upside down no matter what</li>
+            <li>Highest quality upside-down cheese <span class="allergy">(contains lactose)</span></li>
+            <li>Void engineered vegan bread</li>
+            <li>Completely vegan burger</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="customerinfo">
 
-          <h2>Customer information</h2>
-          <p>In this section you enter for example the delivery address and your prefered method of payment</p>
+      <h2>Customer information</h2>
+      <p>In this section you enter for example the delivery address and your prefered method of payment</p>
 
-          <h3>Delivery information:</h3>
-          <form>
-            <p>
-              <label for="firstname"></label>Full name<br/>
-              <input type="text" id="firstname" name="fn" required="required" placeholder="First- and Last name name"/>
-            </p>
-            <p>
-              <label for="mail"></label>E-mail<br/>
-              <input type="text" id="mail" name="mail" required="required" placeholder="E-mail address"/>
-            </p>
-            <p>
-              <label for="street"></label>Street<br/>
-              <input type="text" id="street" name="street" required="required" placeholder="Street name"/>
-            </p>
-            <p>
-              <label for="num"></label>House<br/>
-              <input type="text" id="num" name="num" required="required" placeholder="House number"/>
-            </p>
-            <p>
-              <label for="payment"></label>Payment method<br/>
-              <select id="payment" name = "pay">
-                <option selected="selected">Credit card</option>
-                <option>Paypal</option>
-                <option>Cash</option>
-              </select>
-            </p>
-            <p>
-              <label></label>Gender<br/>
-              <input type="radio" id="male" name="gen"/>
-              <label for="male">Male</label><br/>
-              <input type="radio" id="female" name="gen"/>
-              <label for="female">Female</label></br>
-              <input type="radio" id="non-binary" name="gen"/>
-              <label for="non-binary">Non-binary</label><br/>
-              <input type="radio" id="undisclosed" name="gen" checked="checked"/>
-              <label for="undisclosed">Undisclosed</label>
-            </p>
-          </form>
-          <button type="submit"><image src="img/pizza.png" width="20"/>Place order</button>
-        </section>
-      </main>
-      <footer>&copy Burger Town Inc.</footer>
-    </body>
-    </html>
+      <h3>Delivery information:</h3>
+      <form>
+        <p>
+          <label for="firstname"></label>Full name<br/>
+          <input type="text" id="firstname" name="fn" required="required" placeholder="First- and Last name name"/>
+        </p>
+        <p>
+          <label for="mail"></label>E-mail<br/>
+          <input type="text" id="mail" name="mail" required="required" placeholder="E-mail address"/>
+        </p>
+        <p>
+          <label for="street"></label>Street<br/>
+          <input type="text" id="street" name="street" required="required" placeholder="Street name"/>
+        </p>
+        <p>
+          <label for="num"></label>House<br/>
+          <input type="text" id="num" name="num" required="required" placeholder="House number"/>
+        </p>
+        <p>
+          <label for="payment"></label>Payment method<br/>
+          <select id="payment" name = "pay">
+            <option selected="selected">Credit card</option>
+            <option>Paypal</option>
+            <option>Cash</option>
+          </select>
+        </p>
+        <p>
+          <label></label>Gender<br/>
+          <input type="radio" id="male" name="gen"/>
+          <label for="male">Male</label><br/>
+          <input type="radio" id="female" name="gen"/>
+          <label for="female">Female</label></br>
+          <input type="radio" id="non-binary" name="gen"/>
+          <label for="non-binary">Non-binary</label><br/>
+          <input type="radio" id="undisclosed" name="gen" checked="checked"/>
+          <label for="undisclosed">Undisclosed</label>
+        </p>
+      </form>
+      <button type="submit"><image src="img/pizza.png" width="20"/>Place order</button>
+    </section>
+  </main>
+  <footer>&copy Burger Town Inc.</footer>
+</body>
+</html>
