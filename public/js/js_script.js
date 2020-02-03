@@ -1,4 +1,15 @@
 
+let btn = document.getElementById('send');
+
+btn.addEventListener("click", btnPress);
+
+function btnPress(){
+
+  console.log("Button Pressed");
+
+}
+
+
 let burgerMenu = document.getElementById("menu");
 
 for (let i = 0; i < food.length; ++i){
