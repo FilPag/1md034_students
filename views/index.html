@@ -3,6 +3,8 @@
 <head>
   <title>Burger Town</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/js_script.js" defer></script>
+<!--  <script src="js/vue_script.js" defer></script> -->
   <script src="https://vuejs.org/js/vue.js"></script>
   <main>
     <section id="header">
@@ -13,12 +15,12 @@
       <h2>Select a burger</h2>
       <p>In this section you select a burger</p>
       <div id="menu" class="wrapper">
-        <div v-for="burger in menuArray">
+        <!-- <div v-for="burger in menuArray">
           {{burger.name}}
           <ul>
             <li>{{burger.kCal}}</li>
             <li v-if="burger.otherInfo != ''">{{burger.otherInfo}}</li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </section>
@@ -69,7 +71,5 @@
     </section>
   </main>
   <footer>&copy Burger Town Inc.</footer>
-  <!-- <script src="js/js_script.js"></script> -->
-  <script src="js/vue_script.js"></script>
 </body>
 </html>
