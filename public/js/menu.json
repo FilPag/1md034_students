@@ -1,0 +1,32 @@
+let food = [
+  {
+    "name": "The CheeseBurger",
+    "kCal": "200 kCal",
+    "otherInfo":"Contains the finest cheese (Contains lactose)",
+    "imgPath":"img/cheeseburger.png"
+  },
+  {
+    "name":"The Open Cheeseburger",
+    "kCal":"150 kCal",
+    "otherInfo":"Stays open",
+    "imgPath":"img/openBurg.jpg"
+  },
+  {
+    "name":"The Upside Down CheeseBurger",
+    "kCal":"345 kCal",
+    "otherInfo": "Void Engineered Bun (Gluten free)",
+    "imgPath": "img/upsideDown.jpg"
+  },
+  {
+    "name":"The Big Boy",
+    "kCal":"100000 kCal",
+    "otherInfo": "Pure Meat",
+    "imgPath": "img/huge.jpeg"
+  },
+  {
+    "name":"The Small Boy",
+    "kCal":"1 kCal",
+    "otherInfo": "",
+    "imgPath": "img/mini.jpeg"
+  }
+]
