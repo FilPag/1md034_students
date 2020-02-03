@@ -4,14 +4,13 @@
   <title>Burger Town</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://vuejs.org/js/vue.js"></script>
-  <script src="js/js_script.js"></script>
   <main>
     <section id="header">
       <img id="headerimg" src ="img/banner.jpeg">
       <h1>Town</h1>
     </section>
     <section id="burgers">
-      <h2>Select a Burger</h2>
+      <h2 id="select">{{select}}</h2>
       <p>In this section you select a burger</p>
       <div class="wrapper">
         <div class="row1 col1"><h3>The Cheeseburger</h3></div>
@@ -91,5 +90,7 @@
     </section>
   </main>
   <footer>&copy Burger Town Inc.</footer>
+  <script src="js/js_script.js"></script>
+  <script src="js/vue_script.js"></script>
 </body>
 </html>
