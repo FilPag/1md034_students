@@ -21,15 +21,15 @@ let burgerMenu = document.getElementById("menu");
 for (let i = 0; i < menuArray.length; ++i){
   let burger= document.createElement("div");
   let burgerName = document.createTextNode(menuArray[i].name);
-  let info = document.createElement("ul");
+  let ul = document.createElement("ul");
 
-  let kCal = document.createElement("li");
-  kCal.appendChild(menuArray[i].kCal);
+  let kCalElem = document.createElement('li');
+  kCalElem.appendChild(document.createTextNode(menuArray[i].kCal));
 
-  let otherInfo = document.createElement("li");
-  otherInfo.appendChild(menuArray[i].otherInfo);
+  let otherInfo = document.createElement('li');
+  otherInfo.appendChild(document.createTextNode(menuArray[i].otherInfo));
 
-  info.appendChild(kCal);
+  ul.appendChild(kCalElem);
   burger.appendChild(burgerName);
   burger.appendChild(ul)
   burgerMenu.appendChild(burger);
