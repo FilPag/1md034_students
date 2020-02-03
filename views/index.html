@@ -12,8 +12,14 @@
     <section id="burgers">
       <h2>Select a burger</h2>
       <p>In this section you select a burger</p>
-      <div v-html="burgers" id="select" class="wrapper">
-
+      <div id="menu" class="wrapper">
+        <div v-for="burger in menuArray">
+          {{burger.name}}
+          <ul>
+            <li>{{burger.kCal}}</li>
+            <li v-if="burger.otherInfo != ''">{{burger.otherInfo}}</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="customerinfo">
@@ -64,6 +70,6 @@
   </main>
   <footer>&copy Burger Town Inc.</footer>
   <script src="js/js_script.js"></script>
-  <script src="js/vue_script.js"></script>
+  <!--- ><script src="js/vue_script.js"></script> -->
 </body>
 </html>
