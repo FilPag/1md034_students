@@ -3,6 +3,7 @@
 body{
   font-family: "Signika", sans-serif;
   font-size: 1.2em;
+  cursor: url('../img/jesus.png'), auto;
   margin: 0 auto;
 }
 
@@ -12,7 +13,6 @@ button{
 
 button:hover{
   background-color: gray;
-  cursor: pointer;
 }
 
 h1{
@@ -28,7 +28,7 @@ table{
 }
 
 .burgimg{
-  width: 32vw;
+  width: 100%;
   height: 40vh;
 }
 
