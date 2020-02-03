@@ -1,4 +1,4 @@
-function menuItem(name, kCal, descriptions, imgPath){
+/*function menuItem(name, kCal, descriptions, imgPath){
   this.name = name;
   this.kCal = kCal;
   this.imgPath = imgPath;
@@ -19,3 +19,4 @@ console.log(burg2.string());
 console.log(burg3.string());
 console.log(burg4.string());
 console.log(burg5.string());
+*/

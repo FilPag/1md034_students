@@ -7,40 +7,13 @@
   <main>
     <section id="header">
       <img id="headerimg" src ="img/banner.jpeg">
-      <h1>Town</h1>
+      <h1>Burger Town</h1>
     </section>
     <section id="burgers">
-      <h2 id="select">{{select}}</h2>
+      <h2>Select a burger</h2>
       <p>In this section you select a burger</p>
-      <div class="wrapper">
-        <div class="row1 col1"><h3>The Cheeseburger</h3></div>
-        <div class="row1 col2"><h3>The Open Cheeseburger - Sans cheese</h3></div>
-        <div class="row1 col3"><h3>The Upside Down Cheeseburger</h3></div>
-        <div class="row2 col1"><img class="burgimg" src ="img/cheeseburger.png"></div>
-        <div class="row2 col2"><img class="burgimg" src ="img/openBurg.jpg"></div>
-        <div class="row2 col3"><img class="burgimg" src ="img/upsideDown.jpg"></div>
-        <div class="row3 col1">
-          <ul>
-            <li>AAA quality meat from china</li>
-            <li>Covered in our best cheese <span class="allergy">(contains lactose)</span></li>
-            <li>Our own freshly baked homemade bread <span class="allergy">(contains gluten)</span></li>
-          </ul>
-        </div>
-        <div class="row3 col2">
-          <ul>
-            <li>Revolutionary "stay open" technology for your eating pleasure</li>
-            <li>Cheeseless - Who even needs cheese?</li>
-            <li>Gluten free bread</li>
-          </ul>
-        </div>
-        <div class="row3 col3">
-          <ul>
-            <li>This mysterious burger stays upside down no matter what</li>
-            <li>Highest quality upside-down cheese <span class="allergy">(contains lactose)</span></li>
-            <li>Void engineered vegan bread</li>
-            <li>Completely vegan burger</li>
-          </ul>
-        </div>
+      <div v-html="burgers" id="select" class="wrapper">
+
       </div>
     </section>
     <section id="customerinfo">
