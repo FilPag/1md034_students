@@ -5,7 +5,21 @@ btn.addEventListener("click", btnPress);
 
 function btnPress(){
 
-  console.log("Button Pressed");
+  let values = [];
+  values[0] = document.getElementById("firstname").value;
+  values[1] = document.getElementById("mail").value;
+  values[2] = document.getElementById("street").value;
+  values[3] = document.getElementById("num").value;
+  values[4] = document.getElementById("payment").value;
+
+  let radios = document.getElementsByName("gen");
+
+  for(var i = 0; i < radios.length; ++i){
+    if(radios[i].checked){
+      values[5] = radios[i].id;
+    }
+  }
+  console.log(values);
 
 }
 
