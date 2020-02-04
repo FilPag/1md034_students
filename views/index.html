@@ -4,12 +4,12 @@
   <title>Burger Town</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script type="text/javascript" src="js/menu.json"></script>
-  <script src="js/js_script.js" defer></script>
-  <!--<script src="js/vue_script.js" defer></script> -->
   <script src="https://vuejs.org/js/vue.js"></script>
+  <!--<script src="js/js_script.js" defer></script>-->
+  <script src="js/vue_script.js" defer></script>
 </head>
 <body>
-  <main>
+  <main id="main">
     <section id="header">
       <img id="headerimg" src ="img/banner.jpeg">
       <h1>Burger Town</h1>
@@ -19,6 +19,7 @@
       <p>In this section you select a burger</p>
       <div id="menu" class="wrapper">
         <div v-for="burger in menuArray">
+          <input type="checkbox" id="burgerCheckbox" v-model="ordered" v-bind:name="burger.name" :value="burger.name" >
           {{burger.name}}
           <img class="burgimg" v-bind:src="burger.imgPath"></img>
           <ul>
@@ -37,15 +38,15 @@
       <form>
         <p>
           <label for="firstname"></label>Full name<br/>
-          <input type="text" id="firstname" name="fn" required="required" placeholder="First- and Last name name"/>
+          <input v-model="firstname" type="text" id="firstname" name="name" required="required" placeholder="First- and Last name name"/>
         </p>
         <p>
           <label for="mail"></label>E-mail<br/>
-          <input type="text" id="mail" name="mail" required="required" placeholder="E-mail address"/>
+          <input v-model="mail" type="text" id="mail" name="mail" required="required" placeholder="E-mail address"/>
         </p>
         <p>
           <label for="street"></label>Street<br/>
-          <input type="text" id="street" name="street" required="required" placeholder="Street name"/>
+          <input v-model="street" type="text" id="street" name="street" required="required" placeholder="Street name"/>
         </p>
         <p>
           <label for="num"></label>House<br/>
@@ -53,7 +54,7 @@
         </p>
         <p>
           <label for="payment"></label>Payment method<br/>
-          <select id="payment" name = "pay">
+          <select v-model="payment" id="payment" name = "pay">
             <option selected="selected">Credit card</option>
             <option>Paypal</option>
             <option>Cash</option>
@@ -61,17 +62,18 @@
         </p>
         <p>
           <label></label>Gender<br/>
-          <input type="radio" id="male" name="gen"/>
+          <input type="radio" id="male" value="male" name="gen" v-model="picked"/>
           <label for="male">Male</label><br/>
-          <input type="radio" id="female" name="gen"/>
+          <input type="radio" id="female" value="female" name="gen"v-model="picked"/>
           <label for="female">Female</label></br>
-          <input type="radio" id="non-binary" name="gen"/>
+          <input type="radio" id="non-binary" value="non-binary" name="gen"v-model="picked"/>
           <label for="non-binary">Non-binary</label><br/>
-          <input type="radio" id="undisclosed" name="gen" checked="checked"/>
+          <input type="radio" id="undisclosed" value="undisclosed" name="gen" checked="checked"v-model="picked"/>
           <label for="undisclosed">Undisclosed</label>
         </p>
       </form>
-      <button id="send" type="submit"><image src="img/pizza.png" width="20"/>Place order</button>
+      <button id="send" type="submit" v-on:click="send()"><image src="img/pizza.png" width="20"/>Place order</button>
+      {{result}}
     </section>
   </main>
   <footer>&copy Burger Town Inc.</footer>
