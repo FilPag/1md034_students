@@ -47,6 +47,7 @@ const send = new Vue({
         let toBeSent = this.order;
         toBeSent.orderId = this.getNext(),
         toBeSent.orderItems = vm.ordered;
+        toBeSent.orderInfo = this.result;
         socket.emit('addOrder', toBeSent);
         this.order = null
     },
@@ -54,10 +55,8 @@ const send = new Vue({
       let res = [];
       res[0] = this.firstname;
       res[1] = this.mail;
-      res[2] = this.street;
-      res[3] = this.payment;
-      res[4] = this.picked;
-      res[5] = vm.ordered;
+      res[2] = this.payment;
+      res[3] = this.picked;
       this.result = res;
       this.addOrder();
     }
